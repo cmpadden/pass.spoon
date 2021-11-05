@@ -3,6 +3,18 @@
 A [password-store](https://www.passwordstore.org) selection utility to be used
 in [Hammerspoon](https://www.hammerspoon.org).
 
+## Usage
+
+Install the spoon, and configure the hotkey for toggling the selection menu.
+
+```
+hs.loadSpoon("Pass")
+
+spoon.Pass:bindHotkeys({
+    toggle = { { "cmd", "ctrl" }, 'p' },
+})
+```
+
 ## Warning
 
 This is beta software, and should be used at your own risk -- contributions are
@@ -20,7 +32,8 @@ pinentry-program /usr/local/bin/pinentry-mac
 
 Planned features:
 
-- [ ] Add user configuration for hotkeys and chooser
+- [x] Add user-configuration for hotkeys
+- [ ] Add user-configuration for chooser style
 - [ ] Support the `pass-otp` extension
 - [ ] Support handling `pinentry-tty`
 - [ ] Automatically clear clipboard after a period of time
