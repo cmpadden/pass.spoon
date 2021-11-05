@@ -46,6 +46,9 @@ function obj.callback(selection)
             hs.pasteboard.setContents(o)
         end
     end
+    hs.timer.doAfter(10, function()
+        hs.pasteboard.clearContents()
+    end)
 end
 
 function obj:bindHotkeys(mapping)

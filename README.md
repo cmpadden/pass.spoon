@@ -41,7 +41,7 @@ Planned features:
 - [x] Support the `pass-otp` extension
 - [ ] Add user-configuration for chooser style
 - [ ] Support handling `pinentry-tty`
-- [ ] Automatically clear clipboard after a period of time
+- [x] Automatically clear clipboard after a period of time
 - [ ] Handle subfolders of passwords, possibly setting the chooser `subText`
 - [ ] Lazy load passwords for faster initialization
 - [ ] Automatically update entires using a `pathwatcher` on `~/.password-store/`
