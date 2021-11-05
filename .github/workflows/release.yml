@@ -13,7 +13,7 @@ jobs:
       with:
         type: 'zip'
         filename: 'Pass.spoon.zip'
-        exclusions: '*.git*'
+        path: 'Pass.spoon/'
     - name: Upload Release
       uses: ncipollo/release-action@v1
       with:
