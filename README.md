@@ -45,5 +45,7 @@ Planned features:
 - [ ] Handle subfolders of passwords, possibly setting the chooser `subText`
 - [ ] Lazy load passwords for faster initialization
 - [ ] Automatically update entires using a `pathwatcher` on `~/.password-store/`
+- [ ] Stylized alerts for errors using logo
+- [x] Generate zipped released with GitHub actions
 
 
