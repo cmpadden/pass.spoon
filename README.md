@@ -5,13 +5,14 @@ in [Hammerspoon](https://www.hammerspoon.org).
 
 ## Usage
 
-Install the spoon, and configure the hotkey for toggling the selection menu.
+Install the spoon, and configure the hotkeys for toggling the selection menu.
 
 ```
 hs.loadSpoon("Pass")
 
 spoon.Pass:bindHotkeys({
-    toggle = { { "cmd", "ctrl" }, 'p' },
+    toggle_pass = { { "cmd", "ctrl" }, "p" },
+    toggle_otp = { { "cmd", "ctrl" }, "o" },
 })
 ```
 
@@ -33,10 +34,11 @@ pinentry-program /usr/local/bin/pinentry-mac
 Planned features:
 
 - [x] Add user-configuration for hotkeys
+- [x] Support the `pass-otp` extension
 - [ ] Add user-configuration for chooser style
-- [ ] Support the `pass-otp` extension
 - [ ] Support handling `pinentry-tty`
 - [ ] Automatically clear clipboard after a period of time
 - [ ] Handle subfolders of passwords, possibly setting the chooser `subText`
+- [ ] Lazy load passwords for faster initialization
 
 
