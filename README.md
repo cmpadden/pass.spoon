@@ -16,8 +16,9 @@ Install the spoon, and configure the hotkeys for toggling the selection menu.
 hs.loadSpoon("Pass")
 
 spoon.Pass:bindHotkeys({
-    toggle_pass = { { "cmd", "ctrl" }, "p" },
-    toggle_otp = { { "cmd", "ctrl" }, "o" },
+  toggle_pass = { { "cmd", "ctrl" }, "p" },
+  toggle_login = { { "cmd", "ctrl" }, "l" },
+  toggle_otp = { { "cmd", "ctrl" }, "o" },
 })
 ```
 
@@ -37,15 +38,15 @@ pinentry-program /usr/local/bin/pinentry-mac
 
 Planned features:
 
-- [x] Add user-configuration for hotkeys
-- [x] Support the `pass-otp` extension
 - [ ] Add user-configuration for chooser style
+- [ ] Display subfolders -- possibly setting the chooser `subText`
 - [ ] Support handling `pinentry-tty`
+- [x] Add user-configuration for hotkeys
+- [x] Alert user when attribute is not found
 - [x] Automatically clear clipboard after a period of time
-- [ ] Handle subfolders of passwords, possibly setting the chooser `subText`
-- [ ] Lazy load passwords for faster initialization
-- [ ] Automatically update entires using a `pathwatcher` on `~/.password-store/`
-- [ ] Stylized alerts for errors using logo
 - [x] Generate zipped released with GitHub actions
+- [x] Lazy load choices for faster initialization
+- [x] Support copying of username/login ID
+- [x] Support the `pass-otp` extension
 
 
